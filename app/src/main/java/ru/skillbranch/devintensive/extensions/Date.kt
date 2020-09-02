@@ -34,5 +34,7 @@ enum class TimeUnits{
     DAY
 }
 fun Date.humanizeDiff(date:Date = Date()): String {
-    return " "
+    val TimeNow = date.time - this.time
+
+    return "!!!!$TimeNow"
 }
